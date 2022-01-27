@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<ul class="nav nav-pills nav-fill">
+    <li class="nav-item m-2">
+        <a href="{{url_for('index') }}" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item m-2">
+        <a href="{{ url_for('portfolio') }}" class="nav-link active" >Portfolio</a>
+    </li>
+    <li class="nav-item m-2">
+        <a href="{{ url_for('contact') }}" class="nav-link" >Contact</a>
+    </li>
+</ul>
+{% endblock %}
